@@ -60,6 +60,80 @@
             "install-path": "../asm89/stack-cors"
         },
         {
+            "name": "bmatovu/laravel-xml",
+            "version": "v3.0.0",
+            "version_normalized": "3.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mtvbrianking/laravel-xml.git",
+                "reference": "3ce43efb44d98d25538b27e2e6ad65d2a266301c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mtvbrianking/laravel-xml/zipball/3ce43efb44d98d25538b27e2e6ad65d2a266301c",
+                "reference": "3ce43efb44d98d25538b27e2e6ad65d2a266301c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^7.0|^8.0",
+                "illuminate/http": "^7.0|^8.0",
+                "illuminate/support": "^7.0|^8.0",
+                "php": "^7.2.5"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0|^6.0",
+                "phpunit/phpunit": "^8.4|^9.0"
+            },
+            "time": "2020-09-13T09:12:20+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Bmatovu\\LaravelXml\\LaravelXmlServiceProvider"
+                    ],
+                    "aliases": {
+                        "Xml": "Bmatovu\\LaravelXml\\LaravelXml"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Bmatovu\\LaravelXml\\": "src/"
+                },
+                "files": [
+                    "src/Support/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Matovu",
+                    "email": "mtvbrianking@gmail.com",
+                    "homepage": "http://bmatovu.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel XML Support",
+            "homepage": "https://github.com/mtvbrianking/laravel-xml",
+            "keywords": [
+                "laravel",
+                "middleware",
+                "package",
+                "request",
+                "response",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/mtvbrianking/laravel-xml/issues",
+                "source": "https://github.com/mtvbrianking/laravel-xml/tree/v3.0.0"
+            },
+            "install-path": "../bmatovu/laravel-xml"
+        },
+        {
             "name": "brick/math",
             "version": "0.9.3",
             "version_normalized": "0.9.3.0",

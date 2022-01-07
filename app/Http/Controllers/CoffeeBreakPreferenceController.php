@@ -27,7 +27,7 @@ class CoffeeBreakPreferenceController extends Controller
     public function showHtmlPreferences(CoffeeBreakPreferenceRepositoryInterface $coffeeBreakPreferenceRepository)
     {
         try{
-            return view('show-html-preferences',compact('coffeeBreakPreferenceRepository',$coffeeBreakPreferenceRepository));
+            return view('show-html-preferences',compact('coffeeBreakPreferenceRepository',$coffeeBreakPreferenceRepository->all()));
         }catch (\Exception $e){
             return response($e->getMessage());
         }
@@ -36,7 +36,7 @@ class CoffeeBreakPreferenceController extends Controller
     public function showXmlPreferences(CoffeeBreakPreferenceRepositoryInterface $coffeeBreakPreferenceRepository)
     {
         try{
-            return response()->xml(['coffeeBreakPreferenceRepository',$coffeeBreakPreferenceRepository]);
+            return response()->xml(['coffeeBreakPreferenceRepository'=>$coffeeBreakPreferenceRepository]);
         }catch (\Exception $e){
             return response($e->getMessage());
         }

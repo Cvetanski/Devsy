@@ -18,6 +18,10 @@ Route::get('/', function () {
 });
 
 Route::prefix('coffee-break-preference')->group(function (){
-    Route::get('show-html-preferences','CoffeeBreakPreferencesController@showHtmlPreferences');
-    Route::get('show-xml-preferences','CoffeeBreakPreferencesController@showXmlPreferences');
+    Route::get('show-html-preferences','CoffeeBreakPreferenceController@showHtmlPreferences');
+    Route::get('show-xml-preferences','CoffeeBreakPreferenceController@showXmlPreferences');
+//    Route::get('show-xml-preferences',function (){
+//        $preferenes = \App\CoffeeBreakPreference\CoffeeBreakPreference::all();
+//        return response()->xml(['preferenes'=>$preferenes]);
+//    });
 });

@@ -34,6 +34,7 @@ class ComposerStaticInit3bef89f791c38431d90f71c3df286795
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '8ddcf23dd737a53826c89bb7622ebbe9' => __DIR__ . '/..' . '/bmatovu/laravel-xml/src/Support/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -160,6 +161,7 @@ class ComposerStaticInit3bef89f791c38431d90f71c3df286795
         'B' => 
         array (
             'Brick\\Math\\' => 11,
+            'Bmatovu\\LaravelXml\\' => 19,
         ),
         'A' => 
         array (
@@ -452,6 +454,10 @@ class ComposerStaticInit3bef89f791c38431d90f71c3df286795
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
         ),
+        'Bmatovu\\LaravelXml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bmatovu/laravel-xml/src',
+        ),
         'Asm89\\Stack\\' => 
         array (
             0 => __DIR__ . '/..' . '/asm89/stack-cors/src',
@@ -479,6 +485,7 @@ class ComposerStaticInit3bef89f791c38431d90f71c3df286795
         'App\\CoffeeBreakPreference\\Repositories\\Contract\\CoffeeBreakPreferenceRepositoryInterface' => __DIR__ . '/../..' . '/app/CoffeeBreakPreference/Repositories/Contract/CoffeeBreakPreferenceRepositoryInterface.php',
         'App\\CoffeeBreakPreference\\Repositories\\EloquentCoffeeBreakPreferenceRepository' => __DIR__ . '/../..' . '/app/CoffeeBreakPreference/Repositories/EloquentCoffeeBreakPreferenceRepository.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Events\\CoffeeBreakPreference\\BreakPreference' => __DIR__ . '/../..' . '/app/Events/CoffeeBreakPreference/BreakPreference.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\CoffeeBreakPreferenceController' => __DIR__ . '/../..' . '/app/Http/Controllers/CoffeeBreakPreferenceController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
@@ -491,6 +498,8 @@ class ComposerStaticInit3bef89f791c38431d90f71c3df286795
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Listeners\\SendCoffeeBreakPreferenceEmailToStaffMember' => __DIR__ . '/../..' . '/app/Listeners/SendCoffeeBreakPreferenceEmailToStaffMember.php',
+        'App\\Mail\\CoffeeBreakPreferencesNotification' => __DIR__ . '/../..' . '/app/Mail/CoffeeBreakPreferencesNotification.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -502,6 +511,14 @@ class ComposerStaticInit3bef89f791c38431d90f71c3df286795
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Bmatovu\\LaravelXml\\Http\\Middleware\\RequireXml' => __DIR__ . '/..' . '/bmatovu/laravel-xml/src/Http/Middleware/RequireXml.php',
+        'Bmatovu\\LaravelXml\\Http\\XmlResponse' => __DIR__ . '/..' . '/bmatovu/laravel-xml/src/Http/XmlResponse.php',
+        'Bmatovu\\LaravelXml\\LaravelXml' => __DIR__ . '/..' . '/bmatovu/laravel-xml/src/LaravelXml.php',
+        'Bmatovu\\LaravelXml\\LaravelXmlServiceProvider' => __DIR__ . '/..' . '/bmatovu/laravel-xml/src/LaravelXmlServiceProvider.php',
+        'Bmatovu\\LaravelXml\\Support\\ArrayToXml' => __DIR__ . '/..' . '/bmatovu/laravel-xml/src/Support/ArrayToXml.php',
+        'Bmatovu\\LaravelXml\\Support\\Facades\\LaravelXml' => __DIR__ . '/..' . '/bmatovu/laravel-xml/src/Support/Facades/LaravelXml.php',
+        'Bmatovu\\LaravelXml\\Support\\JsonSimpleXMLElementDecorator' => __DIR__ . '/..' . '/bmatovu/laravel-xml/src/Support/JsonSimpleXMLElementDecorator.php',
+        'Bmatovu\\LaravelXml\\Support\\XmlValidator' => __DIR__ . '/..' . '/bmatovu/laravel-xml/src/Support/XmlValidator.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
         'Brick\\Math\\BigNumber' => __DIR__ . '/..' . '/brick/math/src/BigNumber.php',
