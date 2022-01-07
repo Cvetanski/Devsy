@@ -18,8 +18,4 @@ class ListCoffeeBreakPreferenceCommand
         $this->preferences = $preferences;
     }
 
-//    public function handle(CoffeeBreakPreferenceRepositoryInterface ,$coffeBreakPreferenceRepository)
-//    {
-//        $this->
-//    }
 }
