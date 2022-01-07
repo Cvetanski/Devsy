@@ -21,4 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::prefix('coffee-break-preference')->group(function (){
     Route::get('/','CoffeeBreakPreferenceController@index');
+//    Route::get('show-html-preferences','CoffeeBreakPreferencesController@showHtmlPreferences');
 });

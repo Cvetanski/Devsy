@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\CoffeeBreakPreference\CoffeeBreakPreference;
 use App\CoffeeBreakPreference\Repositories\Contract\CoffeeBreakPreferenceRepositoryInterface;
 use GuzzleHttp\Psr7\Request;
 
@@ -20,6 +21,24 @@ class CoffeeBreakPreferenceController extends Controller
                 'error'=>true,
                 'message'=>$e->getMessage()
             ]);
+        }
+    }
+
+    public function showHtmlPreferences(CoffeeBreakPreferenceRepositoryInterface $coffeeBreakPreferenceRepository)
+    {
+        try{
+            return view('show-html-preferences',compact('coffeeBreakPreferenceRepository',$coffeeBreakPreferenceRepository));
+        }catch (\Exception $e){
+            return response($e->getMessage());
+        }
+    }
+
+    public function showXmlPreferences(CoffeeBreakPreferenceRepositoryInterface $coffeeBreakPreferenceRepository)
+    {
+        try{
+            return view('show-html-preferences',compact('coffeeBreakPreferenceRepository',$coffeeBreakPreferenceRepository));
+        }catch (\Exception $e){
+            return response($e->getMessage());
         }
     }
 }

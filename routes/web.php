@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('coffee-break-preference')->group(function (){
+    Route::get('show-html-preferences','CoffeeBreakPreferencesController@showHtmlPreferences');
+    Route::get('show-xml-preferences','CoffeeBreakPreferencesController@showXmlPreferences');
+});
