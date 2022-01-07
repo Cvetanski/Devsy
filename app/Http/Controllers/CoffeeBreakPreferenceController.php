@@ -42,3 +42,4 @@ class CoffeeBreakPreferenceController extends Controller
         }
     }
 }
+
